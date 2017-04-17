@@ -1,0 +1,4 @@
+<h2>All Instructors</h2>
+<% @instructors.each do |instructor|%>
+  <p><a href="/instructors/<%= instructor.id %>"><%= instructor.name %></a></p>
+<% end %>

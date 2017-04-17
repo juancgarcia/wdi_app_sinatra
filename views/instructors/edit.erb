@@ -1,0 +1,18 @@
+<h2><a href="/instructors">All Instructors</a></h2>
+<form action="/instructors/<%= @instructor.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="instructor[name]">Name:</label>
+  <input name="instructor[name]" value="<%= @instructor.name %>">
+
+  <label for="instructor[age]">Age:</label>
+  <input name="instructor[age]" value="<%= @instructor.age %>">
+
+  <input type="submit" value="Update">
+</form>
+
+<h2>Delete Instructor</h2>
+<form action="/instructors/<%= @instructor.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Delete!">
+</form>

@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS instructors      CASCADE;
+DROP TABLE IF EXISTS students         CASCADE;
+
+CREATE TABLE instructors(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR NOT NULL,
+  age INT NOT NULL
+);
+
+CREATE TABLE students(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR NOT NULL,
+  age INT NOT NULL,
+  instructor_id INT NOT NULL
+);
