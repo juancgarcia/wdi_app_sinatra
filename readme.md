@@ -1,3 +1,5 @@
+# Sample Sinatra Application
+
 ## Installation
 
 `git clone git@github.com:juancgarcia/wdi_app_sinatra.git`
